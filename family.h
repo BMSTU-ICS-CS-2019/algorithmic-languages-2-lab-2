@@ -28,9 +28,7 @@ namespace lab {
 
         void monthly_salary(unsigned long long monthly_salary);
 
-        [[nodiscard]] long double average_salary() const {
-            return static_cast<long double>(monthly_salary_) / member_count_;
-        }
+        [[nodiscard]] long double average_salary() const;
     };
 }
 

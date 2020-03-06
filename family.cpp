@@ -25,6 +25,10 @@ namespace lab {
 
     Family::Family(std::string surname, const size_t member_count, const long long monthly_salary)
             : surname_(std::move(surname)), member_count_(member_count), monthly_salary_(monthly_salary) {}
+
+    long double Family::average_salary() const {
+        return static_cast<long double>(monthly_salary_) / member_count_;
+    }
 }
 
 std::ostream &operator<<(std::ostream &output, const lab::Family &family) {
