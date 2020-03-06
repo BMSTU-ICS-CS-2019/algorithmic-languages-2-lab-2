@@ -16,13 +16,19 @@ namespace lab {
 
     public:
 
-        std::string surname() const;
+        Family(std::string surname, size_t member_count, long long monthly_salary);
 
-        size_t member_count() const;
+        [[nodiscard]] std::string surname() const;
 
-        unsigned long long monthly_salary() const;
+        [[nodiscard]] size_t member_count() const;
 
-        long double average_salary() const {
+        void member_count(size_t member_count);
+
+        [[nodiscard]] unsigned long long monthly_salary() const;
+
+        void monthly_salary(unsigned long long monthly_salary);
+
+        [[nodiscard]] long double average_salary() const {
             return static_cast<long double>(monthly_salary_) / member_count_;
         }
     };
