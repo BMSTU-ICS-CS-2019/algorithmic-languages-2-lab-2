@@ -32,8 +32,6 @@ namespace lab {
     };
 }
 
-std::ostream &operator<<(const std::ostream &output, const lab::Family &family) {
-    output << "RegionalFamily{"
-}
+std::ostream &operator<<(const std::ostream &output, const lab::Family &family);
 
 #endif //ALGORITHMIC_LANGUAGES_2_LAB_2_FAMILY_H
