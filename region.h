@@ -2,6 +2,7 @@
 #define ALGORITHMIC_LANGUAGES_2_LAB_2_REGION_H
 
 
+#include <ostream>
 #include <string>
 
 namespace lab {
@@ -25,6 +26,8 @@ namespace lab {
         void payout_threshold(long double payout_threshold);
     };
 }
+
+std::ostream &operator<<(std::ostream &output, const lab::Region &region);
 
 
 #endif //ALGORITHMIC_LANGUAGES_2_LAB_2_REGION_H

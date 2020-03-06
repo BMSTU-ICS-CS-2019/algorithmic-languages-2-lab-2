@@ -24,3 +24,10 @@ namespace lab {
         payout_threshold_ = payout_threshold;
     }
 }
+
+std::ostream &operator<<(std::ostream &output, const lab::Region &region) {
+    return output << "Region{name=" << region.name()
+                  << ", per_family_payout=" << region.per_family_payout()
+                  << ", payout_threshold=" << region.payout_threshold()
+                  << '}';
+}
