@@ -32,8 +32,8 @@ namespace lab {
 }
 
 std::ostream &operator<<(std::ostream &output, const lab::Family &family) {
-    return output << "Family {surname=" << family.surname()
+    return output << "Family{surname=" << family.surname()
                   << ", member_count=" << family.member_count()
                   << ", monthly_salary=" << family.monthly_salary()
-                  << "}";
+                  << '}';
 }
