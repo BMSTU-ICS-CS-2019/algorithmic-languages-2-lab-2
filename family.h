@@ -24,7 +24,7 @@ namespace lab {
 
         void member_count(size_t member_count);
 
-        [[nodiscard]] unsigned long long monthly_salary() const;
+        [[nodiscard]] virtual unsigned long long monthly_salary() const;
 
         void monthly_salary(unsigned long long monthly_salary);
 
@@ -32,6 +32,8 @@ namespace lab {
     };
 }
 
-std::ostream &operator<<(std::ostream &output, const lab::Family &family);
+std::ostream &operator<<(const std::ostream &output, const lab::Family &family) {
+    output << "RegionalFamily{"
+}
 
 #endif //ALGORITHMIC_LANGUAGES_2_LAB_2_FAMILY_H
