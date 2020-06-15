@@ -13,7 +13,7 @@ namespace lab {
         const std::shared_ptr<Region> region_;
     public:
         RegionalFamily(const std::string &surname, size_t member_count,
-                       long long int monthly_salary,
+                       unsigned long long int monthly_salary,
                        std::shared_ptr<Region> region);
 
         unsigned long long int monthly_salary() const override;

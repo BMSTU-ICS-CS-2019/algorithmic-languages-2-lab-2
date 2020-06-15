@@ -9,21 +9,21 @@ namespace lab {
     class Region {
     protected:
         const std::string name_;
-        long long per_family_payout_;
-        long double payout_threshold_;
+        unsigned long long per_family_payout_;
+        unsigned long long payout_threshold_;
     public:
 
-        Region(std::string name, long long per_family_payout, long double payout_threshold);
+        Region(std::string name, unsigned long long per_family_payout, unsigned long long payout_threshold);
 
         [[nodiscard]] std::string name() const;
 
-        [[nodiscard]] long long per_family_payout() const;
+        [[nodiscard]] unsigned long long per_family_payout() const;
 
-        void per_family_payout(long long per_family_payout);
+        void per_family_payout(unsigned long long per_family_payout);
 
-        [[nodiscard]] long double payout_threshold() const;
+        [[nodiscard]] unsigned long long payout_threshold() const;
 
-        void payout_threshold(long double payout_threshold);
+        void payout_threshold(unsigned long long payout_threshold);
     };
 }
 

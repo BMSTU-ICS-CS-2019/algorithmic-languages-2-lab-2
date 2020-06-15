@@ -16,7 +16,7 @@ namespace lab {
 
     public:
 
-        Family(std::string surname, size_t member_count, long long monthly_salary);
+        Family(std::string surname, size_t member_count, unsigned long long monthly_salary);
 
         [[nodiscard]] std::string surname() const;
 
